@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import { Container, Flex, Box, Input, Button, Subhead, Text } from 'rebass';
-import firebase from './firebase';
-class Register extends Component {
+import { Container,Card, Input, Button,Col } from 'reactstrap';
+import firebase from '../../firebase';
+class Registration extends Component {
  state = {
    email: '',
    password: '',
@@ -17,8 +17,9 @@ handleSubmit = (event) => {
 firebase
      .auth()
      .createUserWithEmailAndPassword(email, password)
-     .then((user) => {
-       this.props.history.push('/');
+     .then((response) => {
+       this.props.history.push('/home');
+       localStorage.setItem("Authtoken",response.user.uid);
      })
      .catch((error) => {
        this.setState({ error: error });
@@ -27,36 +28,35 @@ firebase
  render() {
    const { email, password, error } = this.state;
    return (
-     <Container>
-       <Flex>
-         <Box>
-           <Subhead>Register</Subhead>
-         </Box>
-       </Flex>
+    <Container>
+         <div className="box-center pb-5">
+             <br/><br/><br/><br/>
+             <Col className="m-auto" md="6">
+         <Card className="p-5">
+           <h3 className="text-center mb-3">Registration</h3>
+   
        {error ? (
-         <Flex>
-           <Box>
-             <Text>{error.message}</Text>
-           </Box>
-         </Flex>
+             <h6>{error.message}</h6>
+     
        ) : null}
-       <Flex>
-         <Box>
+
            <form onSubmit={this.handleSubmit}>
-             <Input type="text" name="email" placeholder="Email" value={email} onChange={this.handleInputChange} />
-             <Input
+             <Input className="w-100 mb-3" type="text" name="email" placeholder="Email" value={email} onChange={this.handleInputChange} />
+             <Input  className="w-100 mb-3"
                type="password"
                name="password"
                placeholder="Password"
                value={password}
                onChange={this.handleInputChange}
              />
-             <Button children="Register" />
+             <Button className="w-100" children="Log In" />
            </form>
-         </Box>
-       </Flex>
+
+       </Card>
+       </Col>
+       </div>
      </Container>
    );
  }
 }
-export default withRouter(Register);
+export default withRouter(Registration);

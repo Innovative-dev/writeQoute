@@ -1,0 +1,229 @@
+@import '../src/assets/scss/index.scss';
+
+
+*:focus{
+  outline: 0;
+  box-shadow: none;
+}
+input:focus{
+  outline: 0;
+  box-shadow: 0;
+}
+button:focus{
+    outline: 0;
+    box-shadow: none!important;
+}
+.box-center{
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.nav-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  cursor: pointer;
+}
+
+.header-avatar{
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+.header-avatar.big{
+  width: 44px;
+  height: 44px;
+}
+
+.line-h10{
+  line-height: 10px;
+}
+.line-h11{
+  line-height: 11px;
+}
+.line-h12{
+  line-height: 12px;
+}
+.line-h13{
+  line-height: 13px;
+}
+.line-h14{
+  line-height: 14px;
+}
+.line-h15{
+  line-height: 15px;
+}
+.line-h16{
+  line-height: 16px;
+}
+
+
+.font-7{
+  font-size: 7px;
+}
+.font-8{
+  font-size: 8px;
+}
+.font-9{
+  font-size: 9px;
+}
+.font-10{
+  font-size: 10px;
+}
+.font-11{
+  font-size: 11px;
+}
+ 
+.font-12{
+  font-size: 12px;
+}
+.font-13{
+  font-size: 13px;
+}
+.font-14{
+  font-size: 14px;
+}
+.font-15{
+  font-size: 15px;
+}
+.font-16{
+  font-size: 16px;
+}
+.font-17{
+  font-size: 17px;
+}
+.font-18{
+  font-size: 18px;
+}
+.font-19{
+  font-size: 19px;
+}
+.f-w-100{
+  font-weight: 100;
+}
+.f-w-200{
+  font-weight: 200;
+}
+.f-w-300{
+  font-weight: 300;
+}
+.f-w-400{
+  font-weight: 400;
+}
+.f-w-500{
+  font-weight: 500;
+}
+.f-w-600{
+  font-weight: 600;
+}
+.f-w-700{
+  font-weight: 700;
+}
+.f-w-800{
+  font-weight: 800;
+}
+.f-w-900{
+  font-weight: 900;
+}
+
+.v-h100{
+  height: 100vh;
+}
+.v-h95{
+  height: 95vh;
+}
+.v-h80{
+  height: 80vh;
+}
+.v-h85{
+  height: 85vh;
+}
+.v-h90{
+  height: 90vh;
+}
+.v-h70{
+  height: 70vh;
+}
+.v-h65{
+  height: 65vh;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+  color: #222;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  margin: 0 50px;
+}
+.react-draggable, .cursor {
+  cursor: move;
+}
+.no-cursor {
+  cursor: auto;
+}
+.cursor-y {
+  cursor: ns-resize;
+}
+.cursor-x {
+  cursor: ew-resize;
+}
+.react-draggable strong {
+  background: #ddd;
+  border: 1px solid #999;
+  border-radius: 3px;
+  display: block;
+  margin-bottom: 10px;
+  padding: 3px 5px;
+  text-align: center;
+}
+.box {
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 3px;
+  width: 180px;
+  height: 180px;
+  margin: 10px;
+  padding: 10px;
+  float: left;
+}
+
+.post-card{
+  margin-bottom: 1.8em;
+  .text-wrapper{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 420px;
+    padding: 12px 14px;
+  }
+  pre{
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+  }
+  .header{
+    background-color: #fff;
+  }
+  .footer{
+    background-color: #fff;
+  }
+  .comment-box{
+    .form-control{
+      border-radius: 20px!important;
+      font-size: 13px;
+    }
+  }
+}
