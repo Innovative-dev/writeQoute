@@ -1,12 +1,12 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import firebase from 'firebase';
-const logOutUser = (props) => {
+const logOutUser = (history) => {
  firebase.auth().signOut();
  localStorage.removeItem("Authtoken");
- props.history.push('/login');
+ history.push('/login');
 };
-const LogOut = () => {
- return <a className="dropdown-item" onClick={logOutUser} children="Log Out" ></a>;
+const LogOut = ({history}) => {
+ return <a className="dropdown-item" onClick={()=>logOutUser(history)} children="Log Out" ></a>;
 };
 export default withRouter(LogOut);

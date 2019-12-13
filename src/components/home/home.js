@@ -56,7 +56,7 @@ class Home extends React.Component {
         this.setState({ showComments: postId });
       }
   }
-  showComments = (comments,postId )=> {
+  showComments = (comments,postId,userId )=> {
     let list = Object.values(comments);
     let listKey = Object.keys(comments);
     list.map( (item,index) => {
@@ -75,9 +75,11 @@ class Home extends React.Component {
               </small>
               <div className="d-flex">
                 <a className="text-secondary mr-1"><FeatherIcon icon="calendar" size="13" /></a>
-                <small className="text-muted" style={{'margin-top': '2px'}}>{item.date}, {item.time}</small>
-                <a className="text-danger cursor-pointer ml-1" onClick={()=>this.deleteComment(postId,item.key)}>
+                <small className="text-muted" style={{marginTop: '2px'}}>{item.date}, {item.time}</small>
+                {item.userId === userId ?
+                <a className="text-secondary cursor-pointer ml-1" onClick={()=>this.deleteComment(postId,item.key)}>
                   <FeatherIcon icon="trash-2" size="13" /></a>
+                : ''} 
               </div>
             </div>
           </div>
@@ -85,8 +87,6 @@ class Home extends React.Component {
       );
   }
   deleteComment(postId,commentId){
-    console.log("postId ="+postId+" commentId="+commentId);
-
     let comments = firebase.database().ref(`all-post/${postId}/comments/${commentId}`);
     comments.remove().then(() => {
       this.getAllPost();
@@ -131,7 +131,6 @@ class Home extends React.Component {
     }
     postComments.push().set(body).then(() => {
       this.setState({ commentText: '' });
-      alert('comment is added please refresh to see your comments!');
       document.getElementById('commentBox').value = '';
       this.getAllPost();
     }).catch((error) => {
@@ -404,7 +403,7 @@ class Home extends React.Component {
                               <div className="comment-list" style={this.state.showComments === item.postId ? { 'display': 'block' } : { display: 'none' }}>
                                 {item.comments ?
                                   <div>
-                                    {this.showComments(item.comments,item.postId )}
+                                    {this.showComments(item.comments,item.postId,userId )}
                                    
                                   </div>
                                   : <small className="text-center"> No comments yet !</small>

@@ -56,7 +56,7 @@ class Header extends React.Component {
 
                   <a className="dropdown-item">Set Preference</a>
                   <div className="dropdown-divider"></div>
-                  <LogOut />
+                  <LogOut history={this.props.history} />
                 </div>
               </li>
               :
