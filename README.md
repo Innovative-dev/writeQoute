@@ -1,6 +1,6 @@
 
 
-**This is writeQoute Project where people can post their qoutes, inspired by YourQout (https://www.yourquote.in/)!**
+**This is writeQoute Project where people can post their qoutes, inspired by [YourQoute](https://www.yourquote.in/)!**
 
 ## TECHNOLOGIES USED
 
