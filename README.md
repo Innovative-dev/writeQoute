@@ -1,13 +1,11 @@
 
 This is writeQoute Project where anyone can write qoute.
 
-#TECHNOLOGIES: 
+## ECHNOLOGIES
 
-1.React.js (https://reactjs.org/)
-2.Firebase (https://console.firebase.google.com/u/0/)
-3.Blueprit.js (https://blueprintjs.com/)
-
-![Alt text](./screencapture-writeqoute-web-app.png?raw=true "Optional Title")
+1.React.js (https://reactjs.org/)<br />
+2.Firebase (https://console.firebase.google.com/u/0/)<br />
+3.Blueprint.js (https://blueprintjs.com/)<br />
 
 Project info:
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -78,3 +76,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+### Screenshots:
+
+![Alt text](./screencapture-writeqoute-web-app.png?raw=true "Optional Title")
