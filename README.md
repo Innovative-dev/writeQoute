@@ -1,3 +1,13 @@
+
+This is writeQoute Project where anyone can write qoute.
+
+TECHNOLOGIES: 
+1.React.js (https://reactjs.org/)
+2.Firebase (https://console.firebase.google.com/u/0/)
+3.Blueprit.js (https://blueprintjs.com/)
+
+
+Project info:
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
