@@ -1,0 +1,42 @@
+export const Colors = [
+    '#FFEBEE',
+    '#FFCDD2',
+    '#E57373',
+    '#F44336',
+    '#C62828',
+    '#880E4F',
+    '#F48FB1',
+    '#EC407A',
+    '#AB47BC',
+    '#F3E5F5',
+    '#7B1FA2',
+    '#4A148C'
+  ];
+export const BackgroundImages = [
+    'https://cdn.pixabay.com/photo/2016/03/04/17/51/brick-1236403_1280.jpg',
+    'https://cdn.pixabay.com/photo/2018/03/22/15/03/brick-wall-3250702_1280.jpg',
+    'https://cdn.pixabay.com/photo/2016/11/21/18/11/architecture-1846939_1280.jpg',
+    'https://cdn.pixabay.com/photo/2018/03/04/09/51/space-3197610_1280.jpg',
+    'https://cdn.pixabay.com/photo/2014/04/08/19/38/sky-319546_1280.png',
+    'https://cdn.pixabay.com/photo/2013/08/09/05/54/layer-170971_1280.jpg',
+    'https://cdn.pixabay.com/photo/2017/08/07/21/52/nature-2608274_1280.jpg',
+    'https://cdn.pixabay.com/photo/2016/06/08/16/30/texture-1444067_1280.jpg',
+    'https://cdn.pixabay.com/photo/2016/12/08/19/53/fractals-1892996_1280.jpg',
+    'https://cdn.pixabay.com/photo/2015/04/15/01/28/background-723053_1280.jpg',
+    'https://cdn.pixabay.com/photo/2017/09/16/16/05/sea-2755901_1280.jpg',
+    'https://cdn.pixabay.com/photo/2016/11/29/01/13/background-1866485_1280.jpg',
+    'https://cdn.pixabay.com/photo/2016/10/29/10/14/abstract-1780378_1280.png',
+    'https://cdn.pixabay.com/photo/2015/09/10/14/45/texture-934511_1280.jpg',
+  ];
+  export const Tags = [
+    { value: "Motivation", label: "Motivation" },
+    { value: "Motivational_Qoute", label: "Motivational_Qoute" },
+    { value: "Motivational_Line", label: "Motivational_Line" },
+    { value: "Motivation_Message", label: "Motivation_Message" },
+    { value: "Shayari", label: "Shayari" },
+    { value: "One_Liner", label: "One_Liner" },
+    { value: "Poem_", label: "Poem_" },
+    { value: "qoutes", label: "qoutes" },
+    { value: "Inspire", label: "Inspire" },
+    { value:  "Inspirational",label: "Inspirational" },
+  ];

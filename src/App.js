@@ -1,63 +1,49 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Header from './navigation/header';
-import Home from './components/home/home';
-import Login from './components/auth/login';
-import Registration from './components/auth/registration';
-
-import AddPost from './components/posts/add-post/AddPost';
-import NotFoundPage from './components/helper/notfound';
-import firebase from './firebase';
 import './App.scss';
+import firebase from './helper/firebase/firebase'; 
+import Header from './pages/header/header';
+import Home from './pages/home/home';
+import Profile from './pages/profile/profile'
+import Login from './pages/auth/index';
+import AddPost from './pages/add-post/add-post';
+import NotFoundPage from './helper/NotFoundPage';
 
-// import AppTest from './AppTest'
 
-
-class App extends Component {
-  state = {
-    authenticated: false,
-    userinfo:null
-  };
+class App extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      authenticated: false,
+    };
+  }
   componentDidMount() {
-    
     firebase.auth().onAuthStateChanged((authenticated) => {
+      console.log("onAuthStateChanged is called ");
       if(authenticated){
         this.setState({authenticated: true});
-        let authToken =firebase.auth().currentUser.uid;
-        if (authToken) {
-          console.log("authToken"+authToken);
-          let userinfo = null;
-          firebase.database().ref(`users/${authToken}`).once("value", snapchat => {
-            userinfo = snapchat.val();
-            userinfo.userId=authToken;
-          }).then( () => {
-            this.setState({ userinfo: userinfo});
-          })
-        }
       } else {
-        this.setState({authenticated: false});
+        this.setState({authenticated: false,});
       }
     });
   }
   render() {
+    const { authenticated} = this.state;
     return (
-      // <AppTest />
       <BrowserRouter>
-        <Header  authenticated = {this.state.authenticated} userInfo={this.state.userinfo}/>
+        <Header authenticated = {authenticated}/>
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route exact path='/home' 
-          render={(props) => <Home {...props} userInfo={this.state.userinfo} />}
-        />
+        <Route exact path='/home'   component={Home}/>
         <Route exact path='/login' component={Login} />
-        <Route exact path='/signup' component={Registration} />
-        <Route exact path='/add-qoute' 
-          render={(props) => <AddPost {...props} userInfo={this.state.userinfo} />}
-         />
+        <Route exact path='/add-new-qoute'  component={AddPost} />
+         <Route exact path='/profile'  component={Profile} />
          <Route component={NotFoundPage} />
       </Switch>
     </BrowserRouter> 
     );
   }
  }
- export default App;
+
+
+export default App;

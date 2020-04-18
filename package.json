@@ -1,21 +1,21 @@
 {
-  "name": "dash-w-firebase",
+  "name": "blue-print",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "feather-icons-react": "^0.3.2",
-    "firebase": "^7.0.0",
-    "html-to-image": "^0.1.1",
-    "node-sass": "^4.12.0",
-    "react": "^16.10.1",
+    "@blueprintjs/core": "^3.22.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.3",
+    "@testing-library/user-event": "^7.1.2",
+    "classnames": "^2.2.6",
+    "firebase": "^7.6.2",
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
     "react-color": "^2.17.3",
-    "react-dom": "^16.10.1",
-    "react-draggable": "^4.0.3",
+    "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.1.2",
-    "react-tag-autocomplete": "^5.11.2",
-    "reactstrap": "^8.0.1",
-    "rebass": "^4.0.6"
+    "react-scripts": "3.3.0",
+    "react-select": "^3.0.8"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,229 +1,99 @@
-@import '../src/assets/scss/index.scss';
+//blue print css files
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+//custome scc
 
+@import './assets/scss/index.scss';
 
-*:focus{
-  outline: 0;
-  box-shadow: none;
-}
-input:focus{
-  outline: 0;
-  box-shadow: 0;
-}
-button:focus{
-    outline: 0;
-    box-shadow: none!important;
-}
-.box-center{
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.cursor-pointer{
-  cursor: pointer;
-}
-.nav-item{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  cursor: pointer;
-}
-
-.header-avatar{
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-}
-.header-avatar.big{
-  width: 44px;
-  height: 44px;
-}
-
-.line-h10{
-  line-height: 10px;
-}
-.line-h11{
-  line-height: 11px;
-}
-.line-h12{
-  line-height: 12px;
-}
-.line-h13{
-  line-height: 13px;
-}
-.line-h14{
-  line-height: 14px;
-}
-.line-h15{
-  line-height: 15px;
-}
-.line-h16{
-  line-height: 16px;
-}
-
-
-.font-7{
-  font-size: 7px;
-}
-.font-8{
-  font-size: 8px;
-}
-.font-9{
-  font-size: 9px;
-}
-.font-10{
-  font-size: 10px;
-}
-.font-11{
-  font-size: 11px;
-}
- 
-.font-12{
-  font-size: 12px;
-}
-.font-13{
-  font-size: 13px;
-}
-.font-14{
-  font-size: 14px;
-}
-.font-15{
-  font-size: 15px;
-}
-.font-16{
-  font-size: 16px;
-}
-.font-17{
-  font-size: 17px;
-}
-.font-18{
-  font-size: 18px;
-}
-.font-19{
-  font-size: 19px;
-}
-.f-w-100{
-  font-weight: 100;
-}
-.f-w-200{
-  font-weight: 200;
-}
-.f-w-300{
-  font-weight: 300;
-}
-.f-w-400{
-  font-weight: 400;
-}
-.f-w-500{
-  font-weight: 500;
-}
-.f-w-600{
-  font-weight: 600;
-}
-.f-w-700{
-  font-weight: 700;
-}
-.f-w-800{
-  font-weight: 800;
-}
-.f-w-900{
-  font-weight: 900;
-}
-
-.v-h100{
-  height: 100vh;
-}
-.v-h95{
-  height: 95vh;
-}
-.v-h80{
-  height: 80vh;
-}
-.v-h85{
-  height: 85vh;
-}
-.v-h90{
-  height: 90vh;
-}
-.v-h70{
-  height: 70vh;
-}
-.v-h65{
-  height: 65vh;
-}
-
-
-
-* {
-  box-sizing: border-box;
-}
-html, body {
-  height: 100%;
-}
-body {
-  color: #222;
-  font-family: "Helvetica Neue", sans-serif;
-  font-weight: 200;
-  margin: 0 50px;
-}
-.react-draggable, .cursor {
-  cursor: move;
-}
-.no-cursor {
-  cursor: auto;
-}
-.cursor-y {
-  cursor: ns-resize;
-}
-.cursor-x {
-  cursor: ew-resize;
-}
-.react-draggable strong {
-  background: #ddd;
-  border: 1px solid #999;
-  border-radius: 3px;
-  display: block;
-  margin-bottom: 10px;
-  padding: 3px 5px;
-  text-align: center;
-}
-.box {
-  background: #fff;
-  border: 1px solid #999;
-  border-radius: 3px;
-  width: 180px;
-  height: 180px;
-  margin: 10px;
-  padding: 10px;
-  float: left;
-}
-
-.post-card{
-  margin-bottom: 1.8em;
-  .text-wrapper{
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 420px;
-    padding: 12px 14px;
+.fade {
+    animation: fade-in-keyframes 1s;
   }
-  pre{
-    overflow-x: auto;
-    white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -pre-wrap;
-    white-space: -o-pre-wrap;
-    word-wrap: break-word;
+  @keyframes fade-in-keyframes {
+    from {transform: scale(1.9)}
+    to {transform: scale(1)}
   }
-  .header{
-    background-color: #fff;
-  }
-  .footer{
-    background-color: #fff;
-  }
-  .comment-box{
-    .form-control{
-      border-radius: 20px!important;
-      font-size: 13px;
-    }
-  }
-}
+
+
+// body {
+//     background: #00b4cc;
+//   }
+//   .search {
+//     width: 30rem;
+//     margin: 10rem auto 2rem auto;
+//     text-align: right;
+//     position: relative;
+//   }
+//   .search-box {
+//     border: 4px solid transparent;
+//     border-radius: 2px;
+//     font-size: 2rem;
+//     width: 100%;
+//     padding: 1rem;
+//     transition: width 0.3s;
+//   }
+//   .search-box:focus {
+//     width: 100%;
+//     outline: none;
+//     border: 4px solid #08a1b6;
+//   }
+//   .search-btn {
+//     height: 100%;
+//     width: 4em;
+//     margin-top: -2em;
+//     position: absolute;
+//     top: 50%;
+//     right: 0.5rem;
+  
+//     opacity: 0.2;
+//     background-color: transparent;
+//     border: 0;
+//     background-repeat: no-repeat;
+//     background-size: 100%;
+//     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAACnElEQVR4AcXZsUsbYRjH8e+dh2s1SyAGJwMJuDj1BIcEhJQIOnTq5F+QOf0jIq79A7oFh7aYyVBEkaZDC3awECc1AUXRIqUQotfFocnjJe/dk+b9PKP65Md7z13ee3Uwk2SNHKmngs5TnbDLJQqjA+RYZ4OXuDzvkSYf+cAJ44fPAYFhHeAzVhlqBBGrRoax8KjSJYhRXap4KCVoECiqQQKFLC0CZbXIElOBOwJ9cUchzm2Y5QsveN4tdfY4o00HSDHHPKuUmOV5v/D5SSSJ0MXfIY+HBB55dkIvRIIIvJDR28dnFJ/9kHH0MFaVDehRxlSZnuxAFUMZunKQKBJFUQ4wXTIYqcmPZ5GoFmUEahjw5eJTJI6ivBD4jCS/csrEVZZfU4yQk5OPhrwjcoRygQ0GVdCQf73OUEfisaMkHk1HDJHkYeDX82jlBzo+kCSEyxruwDP/EK1DbsWnhHDFgNTpodWjLgY9NECKfnvoyS4p8wBngN5Z/ABtQK8dP0AH0OuYB5iMqfAAMque7HJtHmAOPdnlxjzAPHqyy5V5gFX0ZJfj8AAn9CvhoeVRol8zPMAuj/xrlhW0Vpg1D3ApflhGR3b4wTlDvI24i4u+w9y0uyVrM213U1qxuy2/Z8bui8m23VezgGW7L6cBLdIWXs9FBAsHFCLCJI9opFMKXEzkkEp/IbK0bEdI0LARQRzVWoigPKy+Z5tlWooIiuP6NhVmAEiPNwLkqHDEw5CGx2wyDQDRI8T7l80U19xwxTFNmpwzKM1nFsyeCw7jFymCAxYjrHDp8r9cUOCUYRZ4Bw6AxVV47QJYXIVXLliNsOSC1Qh/XLAa4ZuDmmIcH1l2AaytwhZfmaAkn/qOb7eYBofJekOJJX7znfccAvwFyB3OeNys7d4AAAAASUVORK5CYII=");
+//   }
+//   .search-btn:hover {
+//     outline: none;
+//     opacity: 0.4;
+//     cursor: pointer;
+//   }
+//   .search-btn:focus {
+//     outline: none;
+//     opacity: 0.6;
+//   }
+  
+//   ul.options {
+//     display: block;
+//     list-style: none;
+//     width: 30rem;
+//     transition: width 0.3s;
+//     margin: auto;
+//     position: relative;
+//   }
+  
+//   ul.options li {
+//     display: block;
+//     background: white;
+//     margin: 10px auto;
+//     padding: 10px;
+//     font-size: 1.2rem;
+//     width: 100%;
+//     border-radius: 2px;
+//   }
+//   ul.options li:hover {
+//     font-weight: bold;
+//     color: #00b4cc;
+//     cursor: pointer;
+//     transition: 0.3s all;
+//   }
+  
+//   ul.options li.option-active {
+//     background: whitesmoke;
+//     font-size: 1.5rem;
+//     color: #00b4cc;
+//   }
+//   .no-options {
+//     color: white;
+//   }
+
+

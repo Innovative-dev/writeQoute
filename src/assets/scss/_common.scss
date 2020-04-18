@@ -1,0 +1,119 @@
+.primary-bg{
+  background-image: linear-gradient(to right, $primary  0%, $secondary   100%)!important;
+  background-color: $primary!important;
+  &.reverse{
+    background-image: linear-gradient(to right, $secondary  0%, $primary   100%)!important;
+  }
+}
+.text-ingradient{
+      background: -webkit-linear-gradient($primary, $secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main-button{
+  color: $white!important;
+    height: 36px;
+    font-weight: 500;
+    border: 0;
+    &.facebook{
+      background-color: $facebook;
+      background-image: none!important;
+    }
+    &.google{
+      background-color: $google;
+      background-image: none!important;
+    }
+    &.github{
+      background-color: $github;
+      background-image: none!important;
+    }
+}
+.logo-wrapper{
+  @extend .primary-bg;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 124px;
+  padding: 0 4px;
+  height: 40px;
+  border-radius: 2px;
+
+  h6{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    text-shadow: 1px 1px 4px #f2f2f2;
+  }
+  .right-img{
+    img{
+      width: 23px;
+      height: 23px;
+      border: 1px solid rgba(255,255,255,0.75);
+      padding: 4px;
+      border-radius: 1px;
+      -webkit-box-shadow: 1px 1px 8px 1px  rgba(237, 237, 237, 0.65);
+-moz-box-shadow:    1px 1px 8px 1px  rgba(237, 237, 237, 0.65);
+box-shadow:         1px 1px 8px 1px  rgba(237, 237, 237, 0.65);
+    }
+  }
+}
+
+.main-wrapper{
+  padding: 3rem 0;
+}
+.tag-sidebar{
+  padding: 0.4rem 1.4rem;
+}
+.bp3-form-group{
+  .bp3-label{
+    color: $black-d;
+  }
+  .bp3-input {
+    height: 34px;
+}
+}
+.aside-profile{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-avatar{
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+&.big{
+  width: 44px;
+  height: 44px;
+}
+&.extra-big{
+  width: 104px;
+  height: 104px;
+}
+}
+
+
+@keyframes loading-spinner-animation {
+  0% { transform: translate(-50%,-50%) rotate(0deg); }
+  100% { transform: translate(-50%,-50%) rotate(360deg); }
+}
+
+.loading-spinner-wrapper {
+    box-sizing: content-box;
+    border-top-color: transparent!important;
+    border-radius: 50%;
+    animation: loading-spinner-animation 1.4s linear infinite;
+}
+
+.no-data-found-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #6c757d;
+  h3{
+    color: #6c757d;
+  }
+  &.sm{
+    height: 45px;
+    padding-top: 15px;
+  }
+}

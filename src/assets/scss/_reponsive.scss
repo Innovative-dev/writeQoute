@@ -1,0 +1,74 @@
+//header
+.bp3-navbar{
+    @media only screen and (max-width: 600px) {
+        padding: 0 2px;
+        .bp3-button span{
+                display: none;
+        }
+    }
+}
+
+//home page post, side bar and tags
+.post-card{
+    @media only screen and (max-width: 800px) {
+        zoom: 80%;
+            .footer{
+                .header-avatar {
+                    margin-right: 14px;
+                }
+            }
+    }
+    @media only screen and (max-width: 600px) {
+        .post-img {
+            zoom: 80%;
+        }
+    }
+}
+//profile section
+.aside-profile{
+    @media only screen and (max-width: 800px) {
+        .header-avatar.extra-big {
+            width: 78px;
+            height: 78px;
+        }
+        h3,h6{
+            margin-bottom: 6px;
+        }
+        h4{
+            margin-top: 6px;
+        }
+    } 
+}
+//add post section
+.add-post-page{
+    @media only screen and (max-width: 1024px) {
+        .col-content {
+            flex: 0 0 81%;
+            max-width: 81%;
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        zoom: 94%;
+    .col-content{
+        flex: 0 0 95%;
+        max-width: 95%;
+    }
+    .head{
+        display: none;
+    }
+    }
+    @media only screen and (max-width: 800px) {
+        zoom: 82%;
+        .col-content{
+            flex: 0 0 97%;
+            max-width: 97%;
+        }
+        .bp3-card header {
+            padding: 12px 8px;
+            zoom: 96%;
+        }
+        .btn-row{
+            text-align: center;
+        }
+    }
+}
