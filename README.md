@@ -1,7 +1,7 @@
 
 This is writeQoute Project where anyone can write qoute.
 
-## ECHNOLOGIES
+## TECHNOLOGIES
 
 1.React.js (https://reactjs.org/)<br />
 2.Firebase (https://console.firebase.google.com/u/0/)<br />
