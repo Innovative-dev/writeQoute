@@ -1,11 +1,13 @@
 
-This is writeQoute Project where anyone can write qoute.
 
-## TECHNOLOGIES
+**This is writeQoute Project where people can post their qoutes, inspired by YourQout (https://www.yourquote.in/)!**
 
-1.React.js (https://reactjs.org/)<br />
-2.Firebase (https://console.firebase.google.com/u/0/)<br />
-3.Blueprint.js (https://blueprintjs.com/)<br />
+## TECHNOLOGIES USED
+
+1.[React.js](https://reactjs.org/)<br />
+2.[Firebase](https://console.firebase.google.com/u/0/)<br />
+3.[Blueprint.js](https://blueprintjs.com/)<br />
+4.[Bootstrap Grid](https://getbootstrap.com/docs/4.1/layout/grid/)
 
 Project info:
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -78,6 +80,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 
-### Screenshots:
-
+## Screenshots:
+<br/>
 ![Alt text](./screencapture-writeqoute-web-app.png?raw=true "Optional Title")
