@@ -2,6 +2,8 @@
 
 **This is writeQoute Project where people can post their qoutes, inspired by [YourQoute](https://www.yourquote.in/)!**
 
+**LIVE DEMO  - [WriteQoute](https://www.yourquote.in/)!**
+
 ## TECHNOLOGIES USED
 
 1.[React.js](https://reactjs.org/)<br />
@@ -82,4 +84,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ## Screenshots:
 <br/>
-![Alt text](./screencapture-writeqoute-web-app.png?raw=true "Optional Title")
+
+![alt text](./screencapture-writeqoute-web-app.png)
