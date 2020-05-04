@@ -2,7 +2,7 @@
 
 **This is writeQoute Project where people can post their qoutes, inspired by [YourQoute](https://www.yourquote.in/)!**
 
-**LIVE DEMO  - [WriteQoute](https://www.yourquote.in/)!**
+**LIVE DEMO  - [WriteQoute](https://writeqoute.web.app/)!**
 
 ## TECHNOLOGIES USED
 
